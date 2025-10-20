@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gem Match</string>
+    <string name="score">Score: %1$d</string>
+    <string name="moves">Moves: %1$d</string>
+    <string name="game_over">Game Over!</string>
+    <string name="new_game">New Game</string>
+</resources>
