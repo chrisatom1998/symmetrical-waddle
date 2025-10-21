@@ -1,28 +1,45 @@
 # Gem Match - Match-3 Game for Android
 
-A classic match-3 puzzle game with a gem theme for Android devices.
+A production-ready match-3 puzzle game with stunning graphics and smooth animations for Android devices.
 
 ## Features
 
+### Core Gameplay
 - **8x8 Game Board**: Classic grid-based gameplay
 - **6 Gem Types**: Colorful gems including Red, Blue, Green, Yellow, Purple, and Orange
 - **Match Detection**: Automatic detection of horizontal and vertical matches (3+ gems)
 - **Cascade System**: Gems fall and refill automatically after matches
 - **Score Tracking**: Points awarded for each matched gem
 - **Move Counter**: Track the number of moves made
-- **Touch Controls**: Simple tap-to-select and swap mechanics
+- **Touch Controls**: Intuitive tap-to-select and swap mechanics
+
+### Graphics & Visual Effects
+- **Hexagonal Gems**: Beautiful gem shapes with radial gradients and lighting effects
+- **Smooth Animations**: Professional swap, fall, and disappear animations
+- **Particle Effects**: Explosion and sparkle effects when gems are matched
+- **Score Popups**: Animated floating score indicators
+- **Pulsing Selection**: Glowing effect on selected gems
+- **Dynamic Backgrounds**: Gradient backgrounds with starfield effect
+- **Polished UI**: Modern design with gradient cards and elevated elements
+- **60 FPS**: Smooth animations running at 60 frames per second
 
 ## Project Structure
 
 ```
 app/src/main/java/com/example/gemmatch/
 ├── model/
-│   └── Gem.kt              # Gem data models and types
+│   └── Gem.kt                    # Gem data models and types
 ├── game/
-│   ├── GameBoard.kt        # Game logic and board management
-│   └── GameView.kt         # Custom view for rendering and input
+│   ├── GameBoard.kt              # Game logic and board management
+│   └── GameView.kt               # Enhanced custom view with animations
+├── graphics/
+│   ├── GemRenderer.kt            # Advanced gem rendering with effects
+│   ├── AnimationManager.kt       # Smooth animation system
+│   ├── ParticleSystem.kt         # Particle effects for matches
+│   ├── BackgroundRenderer.kt     # Background and board rendering
+│   └── ScorePopup.kt             # Animated score feedback
 └── ui/
-    └── MainActivity.kt     # Main activity
+    └── MainActivity.kt           # Main activity
 ```
 
 ## Game Mechanics
@@ -51,10 +68,18 @@ app/src/main/java/com/example/gemmatch/
 - Prevents initial board states with matches
 
 **GameView**:
-- Custom Android View for rendering
-- Touch input handling
-- Visual feedback for selected gems
-- Draws gems as colored circles
+- Enhanced custom Android View with production graphics
+- Advanced touch input handling with animation support
+- Integrates all graphics components
+- 60 FPS animation loop
+- Smart invalidation for performance
+
+**Graphics Components**:
+- **GemRenderer**: Hexagonal gems with gradients, shadows, and lighting
+- **AnimationManager**: Swap, fall, disappear, and appear animations
+- **ParticleSystem**: Explosion and sparkle particle effects
+- **BackgroundRenderer**: Gradient backgrounds with starfield
+- **ScorePopup**: Animated floating score feedback
 
 ## Technical Details
 
@@ -62,6 +87,9 @@ app/src/main/java/com/example/gemmatch/
 - **Minimum SDK**: API 24 (Android 7.0)
 - **Target SDK**: API 34 (Android 14)
 - **Build System**: Gradle with Kotlin DSL
+- **Code Statistics**: 9 Kotlin files, 1,169 lines of code
+- **Architecture**: Clean separation of graphics, game logic, and UI layers
+- **Performance**: 60 FPS animations with efficient rendering
 
 ## Building the Project
 

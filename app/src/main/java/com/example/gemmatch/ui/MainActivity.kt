@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUI(score: Int, moves: Int) {
-        scoreText.text = getString(R.string.score, score)
-        movesText.text = getString(R.string.moves, moves)
+        scoreText.text = score.toString()
+        movesText.text = moves.toString()
     }
 }

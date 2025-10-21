@@ -103,6 +103,11 @@ class GameBoard(val size: Int = 8) {
     }
 
     /**
+     * Find all matched gems on the board (public version for animations)
+     */
+    fun findAllMatchesPublic(): Set<Position> = findAllMatches()
+
+    /**
      * Find all matched gems on the board
      */
     private fun findAllMatches(): Set<Position> {

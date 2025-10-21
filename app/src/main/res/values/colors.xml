@@ -20,4 +20,9 @@
     <color name="background">#FF1A1A2E</color>
     <color name="board_background">#FF16213E</color>
     <color name="selected_highlight">#80FFFFFF</color>
+
+    <!-- Enhanced UI Colors -->
+    <color name="text_secondary">#FFADB5BD</color>
+    <color name="score_color">#FFFFD700</color>
+    <color name="moves_color">#FF6BB5FF</color>
 </resources>
